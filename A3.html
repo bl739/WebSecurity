@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Biso Limbu 8560122 A3
+        </title>
+        <script>
+            //Task 4 Script
+        function shAnimal(animal) {
+        // Remove active class from all buttons
+        var buttons = document.getElementsByTagName("button");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active"); 
+        }
+
+        // Add active class to the clicked button
+        document.getElementById(animal.toLowerCase()).classList.add("active");
+        
+
+        // Update text field and message
+        document.getElementById("dispMsg").className = "dispMsg";
+        document.getElementById("dispMsg").value = "User clicks " + animal;
+        
+        document.getElementById("mainMsg").className = "mainMsg";
+        document.getElementById("mainMsg").innerHTML = animal + " is clicked";
+
+        // Update image
+        document.getElementById("dispImg").src = animal.toLowerCase() + ".png";
+    }
+    
+		
+        </script>
+        <style>
+            /*Task1 CSS*/
+            #t1{
+                background-color: rgb(92, 177, 226);
+                width: 40%;
+                padding: 10px;
+                border: dotted
+            }
+            .t1{
+                color: rgb(34, 34, 167);
+                font-family:Arial, Helvetica, sans-serif
+            }
+
+            /*Task2 CSS*/
+            #task2 th{
+                text-align: left;
+                background-color:rgb(45, 130, 163);
+                color: rgb(19, 16, 6);
+                padding: 10px;
+                width:450px;
+            }
+
+            #task2 td{
+                text-align: left;
+                padding: 10px;
+                width:450px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                color:blue
+            }
+            
+            #task2 {
+                border: 5px solid;
+                border-color: gray;
+                border-style:dashed;
+            }
+       
+            .tg{
+                background-color: rgba(204, 139, 139, 0.877);
+            }
+
+            .tw{
+                background-color: rgba(110, 134, 64, 0.877);
+            }
+
+
+            a:link    { color: blue; }
+            a:visited { color: blue; }
+            
+            .bd1{
+                font-weight: bold;
+            }
+
+            /*Task3 CSS*/
+            #task3 table {
+            width: 100%;
+            border-collapse: collapse;
+            }
+            #task3 th {
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: rgb(241, 113, 119);
+            }
+            #task3 td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
+            }
+            #task3 img {
+            width: 200px;
+            }
+            #task3 a {
+            color: blue;
+            text-decoration: none;
+            }
+            .t3sp {
+            font-weight: bold;
+            text-align: center;
+            }
+            
+            /*Task 4 CSS*/
+            .active {
+            background-color: #e9b98c;
+            color: white;
+            }
+            .dispMsg{
+            background-color: #5a2faa;
+            font-weight: bold;
+            color: white;
+            }
+            .mainMsg{
+            font-weight: bold;
+            text-transform: uppercase;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <h2>Task 1</h2>
+        <!-- Task 1 html code -->
+        <div id="t1">
+        <h1 class="t1">8560122 Biso Limbu </h1>
+        <h2 class="t1">COMP804: Web Security</h2>
+        <h3 class="t1">Assignment 1, due at the end of Week 5</h3>
+        </div>
+        <br><br>
+        <h2>Task 2</h2>
+        <!-- Task2 html code -->
+        <table id="task2">
+            <tr>
+                <th>Activity</th><th>Date</th>
+            </tr>
+            <tr class="tw">
+                <td>First day to enrol for re-enrolling (continuing students)</td>
+                <td>20 Nov 2023</td>
+            </tr>
+            <tr class="tg">
+                <td>Orientation</td>
+                <td>04 Dec 2023</td>
+            </tr>
+            <tr class="tw">
+                <td>Lectures Commence (weeks 1-10)</td>
+                <td>19 Aug - 25 Oct 2024</td>
+            </tr>
+            <tr class="tg">
+                <td>Last day to enrol / add subjects yourself</td>
+                <td>30 Aug 2024</td>
+            </tr>
+            <tr class="tw"> 
+                <td>Last day to enrol / add subjects with Head of Students Approval</td>
+                <td>06 Sep 2024</td>
+            </tr>
+            <tr class="tg">
+                <td><p class="bd1">CENSUS DATE</p>
+                    <li>Fees due</li>
+                    <li>Last day to withdraw from subject/s withouth paying for them</li>
+                    <li>HECS/FEE HELP debt reporting date</li>
+                    <li>Last day to change HECS/FEE HELP billing option</li>
+                    <p class="bd1"><a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659">Learn more about Census date ></a></p>
+                </td>
+                <td>09 Sep 2024</td>
+            </tr>
+            <tr class="tw">
+                <td>Student Services and Amenities Fees Due</td>
+                <td>10 Sep 2024</td>
+            </tr>
+        </table>
+        <br><br>
+        <!-- Task3 html code -->
+        <h2>Task 3</h2>
+        <table id="task3">
+            <tr>
+                <th>Name</th>
+                <th>Web Attacks</th>
+            </tr>
+            <tr class="tw">
+                <td>
+                    <p class="t3sp">Malware</p>
+                    <img src="malware.png" alt="malware picture">
+                    <p>source https://www.malwarebytes.com/malware</p>
+                </td>
+                <td>
+                    Malware, or “malicious software,” is an umbrella term that describes any malicious program or code that is harmful to systems.
+    
+    Hostile, intrusive, and intentionally nasty, malware seeks to invade, damage, or disable computers, computer systems, networks, tablets, and mobile devices, often by taking partial control over a device’s operations. Like the human flu, it interferes with normal functioning.
+                    <br></br>
+                    <a href="https://www.malwarebytes.com/malware">Learn more about Malware ></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t3sp">DDOS</p>
+                    <img src="ddos.png" alt="DDos Image">
+                    <p>source https://www.splunk.com/en_us/blog/learn/dos-denial-of-service-attacks.html</p>
+                </td>
+                <td>
+                    Denial-of-Service (DoS) attacks disrupt services by overwhelming systems with traffic, making them inaccessible to users. Techniques like SYN flood, teardrop, ICMP flood, and buffer overflow exploit vulnerabilities to crash servers. DDoS attacks, a subset of DoS, use multiple compromised systems for a broader impact. 
+                    <br>
+                    <a href="https://www.splunk.com/en_us/blog/learn/dos-denial-of-service-attacks.html">Learn more about DDOS ></a>
+                </td>
+            </tr>
+            <tr class="tw">
+                <td>
+                    <p class="t3sp">Phishing</p>
+                    <img src="phishing.png" alt="Phishing Image">
+                    <p>source https://www.cisco.com/c/en_in/products/security/email-security/what-is-phishing.html</p>
+                </td>
+                <td>
+                    Phishing attacks are the practice of sending fraudulent communications that appear to come from a reputable source. It is usually done through email. The goal is to steal sensitive data like credit card and login information, or to install malware on the victim’s machine.
+                    <br>
+                    <a href="https://www.cisco.com/c/en_in/products/security/email-security/what-is-phishing.html">Learn more about Phishing ></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t3sp">Spoofing</p>
+                    <img src="spoofing.png" alt="Spoofing Image">
+                    <p>source https://www.kaspersky.com/resource-center/definitions/spoofing</p>
+                </td>
+                <td>
+                    Spoofing is a broad term for the type of behavior that involves a cybercriminal masquerading as a trusted entity or device to get you to do something beneficial to the hacker — and detrimental to you. Any time an online scammer disguises their identity as something else, it’s spoofing.
+                    <br>
+                    <a href="https://www.kaspersky.com/resource-center/definitions/spoofing">Learn more about Spoofing ></a>
+                </td>
+            </tr>
+            <tr class="tw">
+                <td>
+                    <p class="t3sp">Code Injection</p>
+                    <img src="codeinjection.png" alt="Code Injection Image">
+                    <p>source https://www.javelynn.com/cloud/code-injection-examples-and-prevention/</p>
+                </td>
+                <td>
+                    Threat actors take advantage of code injection vulnerabilities to embed malicious code into a source code, which the application interprets and executes. During the malicious injection, attackers leverage the fact that these systems construct part of a code segment using external data while lacking sufficient input validation. 
+                    <br>
+                    <a href="https://www.javelynn.com/cloud/code-injection-examples-and-prevention/">Learn more about Code Injection ></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t3sp">Supply Chain Attack</p>
+                    <img src="supplychainattack.png" alt="Supply Chain Attack Image">
+                    <p>source https://www.javelynn.com/cloud/code-injection-examples-and-prevention/</p>
+                </td>
+                <td>
+                    A software supply chain attack happens when hackers manipulate the code in third-party software components in order to compromise the ‘downstream’ applications that use them.
+
+Attackers leverage compromised software to steal data, corrupt targeted systems, or to gain access to other parts of the victim’s network through lateral movement.
+                    <br>
+                    <a href="https://portswigger.net/daily-swig/software-supply-chain-attacks-everything-you-need-to-know">Learn more about Supply Chain Attack ></a>
+                </td>
+            </tr>
+            <tr class="tw">
+                <td>
+                    <p class="t3sp">Insider Threats</p>
+                    <img src="insider-threat.jpg" alt="Insider Threat Image">
+                    <p>source https://www.imperva.com/learn/application-security/insider-threats/</p>
+                </td>
+                <td>
+                    An insider threat is a security risk that originates from within the targeted organization. It typically involves a current or former employee or business associate who has access to sensitive information or privileged accounts within the network of an organization, and who misuses this access.
+                    <br>
+                    <a href="https://www.imperva.com/learn/application-security/insider-threats/">Learn more about Insider Threats ></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t3sp">DNS Tunneling</p>
+                    <img src="dns-tunneling.jpg" alt="DNS Tunneling Image">
+                    <p>source https://www.checkpoint.com/cyber-hub/network-security/what-is-dns-tunneling/</p>
+                </td>
+                <td>
+                    The Domain Name System (DNS) protocol is one of the most widely used and trusted protocols on the Internet. However, DNS tunneling attacks abuse this protocol to sneak malicious traffic past an organization’s defenses. By using malicious domains and DNS servers, an attacker can use DNS to evade network defenses and perform data exfiltration.
+                    <br>
+                    <a href="https://www.checkpoint.com/cyber-hub/network-security/what-is-dns-tunneling/">Learn more about DNS Tunneling ></a>
+                </td>
+            </tr>
+            <tr class="tw">
+                <td>
+                    <p class="t3sp">IOT Based Attacks</p>
+                    <img src="IOT.png" alt="IOT based attack Image">
+                    <p>source https://nordvpn.com/blog/iot-attacks/</p>
+                </td>
+                <td>
+                    An IoT attack is a cyberattack that targets Internet of Things systems, which include physical devices, vehicles, buildings, and other objects embedded with software that enables them to collect or exchange data. As IoT grows, the number of cyber threats increase. Read on to learn more about IoT attacks and how to protect your systems.
+                    <br>
+                    <a href="https://nordvpn.com/blog/iot-attacks/">Learn more about IOT based attack ></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t3sp">Identity-Based Attack</p>
+                    <img src="identity.jpg" alt="Identity Attack Image">
+                    <p>source https://www.lepide.com/blog/what-are-identity-based-attacks/</p>
+                </td>
+                <td>
+                    Identity-based attacks target and compromise the digital identities of individuals, organizations, or entities. These attacks exploit vulnerabilities in identity and access management systems, allowing cybercriminals to steal, alter, or misuse sensitive information such as login credentials, domain names, personal data, and digital certificates. 
+                    <br>
+                    <a href="https://www.lepide.com/blog/what-are-identity-based-attacks/">Learn more about Identity-Based Attack ></a>
+                </td>
+            </tr>        
+        </table>
+        <br><br>
+        <!-- Task4 html code -->
+        <div id="task4">
+        <h2>Task 4</h2>
+            <button id="cat" onClick="shAnimal('cat')">Cat</button>
+            <button id="dog" onClick="shAnimal('dog')">Dog</button>
+            <button id="frog" onClick="shAnimal('frog')">Frog</button>
+            <br><br>	
+            <input id="dispMsg">
+            <br><br>
+            <span id="mainMsg"></span>
+            <br><br>	
+            <img id="dispImg">
+        </div>
+    </body>
+</html>
